@@ -5,9 +5,9 @@ spring:
   application:
     name: iam
   datasource:
-    url: ${POSTGRES_URL:jdbc:postgresql://192.168.2.109:5436/hcm?currentSchema=iam&useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true}
-    username: ${POSTGRES_USER:iam}
-    password: ${POSTGRES_PASSWORD:Evotek1234}
+    url: ${POSTGRES_URL:jdbc:postgresql://localhost:5432/demo}
+    username: ${POSTGRES_USER:admin}
+    password: ${POSTGRES_PASSWORD:admin}
     driver-class-name: org.postgresql.Driver
 
   jpa:
