@@ -75,7 +75,7 @@ public class CustomAuthenticationFilter extends OncePerRequestFilter {
     }
 
     private Optional<UserAuthority> enrichAuthority(Jwt token) {
-
+        // Call lấy UserAuthority từ IAM dựa vào AuthorityService lưu ý với service khác IAM thì impl sẽ là RemoteAuthorityServiceImpl, IAM thì sẽ dùng AuthorityServiceImpl(@Primary)
         return Optional.empty();
     }
 }
