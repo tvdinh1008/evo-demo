@@ -1,0 +1,30 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: storage
+  datasource:
+    url: ${POSTGRES_URL:jdbc:postgresql://192.168.2.109:5436/hcm?currentSchema=iam&useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true}
+    username: ${POSTGRES_USER:iam}
+    password: ${POSTGRES_PASSWORD:Evotek1234}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uris:
+            sso: ${JWK_SSO_URL:http://172.31.2.120:8070/realms/z113-qa/protocol/openid-connect/certs}
+            internal: ${JWK_INTERNAL_URL:http://localhost:8081/api/certificate/.well-known/jwks.json}
+
+app:
+  iam:
+    internal-url: http://localhost:8081
