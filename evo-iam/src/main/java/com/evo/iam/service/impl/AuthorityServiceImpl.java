@@ -16,6 +16,7 @@ import java.util.UUID;
 public class AuthorityServiceImpl implements AuthorityService {
     @Override
     public UserAuthority getUserAuthority(UUID userId) {
+        //log.info(userId.toString());
         return null;
     }
 

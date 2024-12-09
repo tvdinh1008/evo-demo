@@ -11,6 +11,8 @@
 	<artifactId>common-client</artifactId>
 
 	<properties>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
 	</properties>
 	<dependencies>
 		<dependency>
