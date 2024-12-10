@@ -24,4 +24,10 @@ public class Response<T> implements Serializable {
         return response;
     }
 
+    public Response<T> success() {
+        success = true;
+        code = 200;
+        return this;
+    }
+
 }
