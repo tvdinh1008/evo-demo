@@ -1,6 +1,6 @@
 package com.evo.iam.service.impl;
 
-import com.evo.common.webapp.model.UserAuthority;
+import com.evo.common.UserAuthority;
 import com.evo.common.webapp.security.AuthorityService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
