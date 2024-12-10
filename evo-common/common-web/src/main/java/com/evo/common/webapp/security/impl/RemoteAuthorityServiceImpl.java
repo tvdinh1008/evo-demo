@@ -1,7 +1,7 @@
 package com.evo.common.webapp.security.impl;
 
+import com.evo.common.UserAuthority;
 import com.evo.common.client.iam.IamClient;
-import com.evo.common.webapp.model.UserAuthority;
 import com.evo.common.webapp.security.AuthorityService;
 import org.springframework.stereotype.Service;
 

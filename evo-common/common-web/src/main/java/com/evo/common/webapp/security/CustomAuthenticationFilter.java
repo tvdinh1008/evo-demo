@@ -1,7 +1,7 @@
 package com.evo.common.webapp.security;
 
-import com.evo.common.webapp.model.UserAuthentication;
-import com.evo.common.webapp.model.UserAuthority;
+import com.evo.common.UserAuthentication;
+import com.evo.common.UserAuthority;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

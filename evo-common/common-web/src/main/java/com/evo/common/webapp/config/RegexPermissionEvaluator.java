@@ -1,6 +1,6 @@
 package com.evo.common.webapp.config;
 
-import com.evo.common.webapp.model.UserAuthentication;
+import com.evo.common.UserAuthentication;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.access.PermissionEvaluator;
 import org.springframework.security.core.Authentication;

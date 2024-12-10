@@ -1,6 +1,6 @@
 package com.evo.common.webapp.security;
 
-import com.evo.common.webapp.model.UserAuthority;
+import com.evo.common.UserAuthority;
 
 import java.util.UUID;
 

@@ -1,4 +1,4 @@
-package com.evo.common.webapp.model;
+package com.evo.common;
 
 import lombok.EqualsAndHashCode;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

@@ -1,4 +1,4 @@
-package com.evo.common.webapp.model;
+package com.evo.common;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
